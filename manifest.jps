@@ -1,7 +1,7 @@
 {
     "jpsType": "install",
     "id": "jelastic-kappa",
-    "baseUrl": "https://github.com/Havoc24k/kappa",
+    "baseUrl": "https://raw.githubusercontent.com/Havoc24k/kappa/master",
     "description": {
         "text": "description.md",
         "short": "Jelastic Kappa"
@@ -16,7 +16,7 @@
         "count": "1",
         "cloudlets": 32,
         "image": "jelastic/docker-ce",
-        "nodeGroup": "${settings.role}",
+        "nodeGroup": "cp",
         "displayName": "Jelastic Kappa Node",
         "extip": "true",
         "env": {
@@ -24,7 +24,6 @@
         }
     }],
     "onInstall": [],
-    "onAfterScaleOut[${settings.role}]": "connect-to-swarm",
     "actions": {},
     "success": {},
     "jpsVersion": "1.1"
