@@ -12,8 +12,7 @@
     "settings": {
         "fields": []
     },
-    "nodes": [
-    {
+    "nodes": [{
         "count": "1",
         "cloudlets": 2,
         "image": "redis",
@@ -23,8 +22,7 @@
         "env": {
             "JELASTIC_EXPOSE": false
         }
-    },
-    {
+    }, {
         "count": "1",
         "cloudlets": 2,
         "image": "tiangolo/uwsgi-nginx:python3.6",
@@ -34,8 +32,7 @@
         "env": {
             "JELASTIC_EXPOSE": false
         }
-    },
-    {
+    }, {
         "count": "1",
         "cloudlets": 2,
         "image": "tiangolo/uwsgi-nginx:python3.6",
@@ -45,8 +42,7 @@
         "env": {
             "JELASTIC_EXPOSE": false
         }
-    },
-    ],
+    }],
     "onInstall": [],
     "actions": {},
     "success": {},
